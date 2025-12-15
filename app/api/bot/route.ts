@@ -41,7 +41,7 @@ async function sendMessage(
     parse_mode?: string
   },
 ) {
-  const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+  const response = await fetch(`https://api.telegram.org/bot8404137965:AAEhMx9QEc2veJNcsBt_knG3cw0W7IRzCZM/sendMessage`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -56,7 +56,7 @@ async function sendMessage(
 }
 
 async function answerCallbackQuery(callbackQueryId: string, text?: string) {
-  await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/answerCallbackQuery`, {
+  await fetch(`https://api.telegram.org/bot8404137965:AAEhMx9QEc2veJNcsBt_knG3cw0W7IRzCZM/answerCallbackQuery`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -77,7 +77,7 @@ async function editMessageText(
     parse_mode?: string
   },
 ) {
-  await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/editMessageText`, {
+  await fetch(`https://api.telegram.org/bot8404137965:AAEhMx9QEc2veJNcsBt_knG3cw0W7IRzCZM/editMessageText`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
